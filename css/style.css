@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background: rgb(248, 248, 248);
+    --foreground: rgb(27, 44, 72);
+
+    --card: rgb(255, 255, 255);
+    --card-foreground: rgb(27, 44, 72);
+
+    --popover: rgb(255, 255, 255);
+    --popover-foreground: rgb(27, 44, 72);
+
+    --primary: rgb(27, 44, 72);
+    --primary-foreground: rgb(248, 248, 248);
+
+    --secondary: rgb(189, 230, 226);
+    --secondary-foreground: rgb(27, 44, 72);
+
+    --muted: rgb(248, 248, 248);
+    --muted-foreground: rgb(115, 115, 115);
+
+    --accent: rgb(59, 130, 246);
+    --accent-foreground: rgb(248, 248, 248);
+
+    --destructive: rgb(239, 68, 68);
+    --destructive-foreground: rgb(248, 248, 248);
+
+    --border: rgb(229, 231, 235);
+    --input: rgb(229, 231, 235);
+    --ring: rgb(189, 230, 226);
+
+    --radius: 0.75rem;
+}
+
+h1{
+    font-family: 'Obviously', sans-serif;
+    font-weight: 300;
+    font-size: 2.8rem;
+}
+
+h2, h3{
+    font-family: 'Chill Script', sans-serif;
+}
+
+p{
+    font-size: 1.325rem;
+    line-height: 1.625;
+    font-family: 'Poppins',sans-serif;
+}
+
+a{
+    text-decoration: none !important; 
+}
+
+.large-icon{
+    font-size: 6vw;
+}

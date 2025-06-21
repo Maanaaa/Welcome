@@ -1,0 +1,1 @@
+<link href="https://fonts.googleapis.com/css2?family=Obviously&family=Chill+Script&display=swap" rel="stylesheet">
