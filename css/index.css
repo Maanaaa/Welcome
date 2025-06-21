@@ -129,6 +129,7 @@ main div:nth-child(2) .welcomeCodeLosted a{
         padding-top: 8rem;
         padding-bottom: 6rem;
         box-sizing: border-box;
+        max-height: 70%;
     }
 
     main div:nth-child(2) p{
@@ -140,7 +141,7 @@ main div:nth-child(2) .welcomeCodeLosted a{
     }
 
     .large-icon {
-        font-size: 22vw;
+        font-size: 18vw;
     }
 
     header p {
@@ -174,7 +175,7 @@ main div:nth-child(2) .welcomeCodeLosted a{
     }
 
     h1{
-        font-size: 7rem;
+        font-size: 6rem;
     }
 
     }
