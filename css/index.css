@@ -1,11 +1,14 @@
 body {
-    background: 
-        linear-gradient(135deg, #BDE6E2 0%, #F8F8F8 50%, #3B82F6 100%),
-        url('../assets/backgrounds/main.png');
+    background: linear-gradient(135deg, #BDE6E2 0%, #F8F8F8 50%, #3B82F6 100%), url('../assets/backgrounds/main.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
 }
 
 .traversing-image {
@@ -14,7 +17,6 @@ body {
     left: 0;
     width: 95%;
     height: auto;
-    max-height: 100vh;
     transform: translateY(-50%);
     z-index: -1;
 }
@@ -23,28 +25,33 @@ body {
 Header
 -------------------------------------------*/
 
-header{
+header {
     width: 100%;
     text-align: center;
+    padding: 1rem 0;
 }
 
-header h1{
+header h1 {
     font-weight: 700;
     color: var(--primary);
+    margin: 0;
+    font-size: 2rem;
 }
 
-header h2{
-    font-size: 2vw;
+header h2 {
+    font-size: 4vw;
+    margin: 0.5rem 0;
 }
 
-header p{
-    max-width: 35%;
+header p {
+    max-width: 90%;
     margin: 0 auto;
-    color: rgb(55 65 81);
+    color: rgb(55, 65, 81);
     font-weight: 400;
+    font-size: 1rem;
 }
 
-header p span{
+header p span {
     color: var(--accent);
     font-weight: bold;
 }
@@ -53,106 +60,128 @@ header p span{
 Formulaire
 -------------------------------------------*/
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
 
 main div:nth-child(1) {
-    width: 30%;
+    width: 90%;
     background-color: var(--card);
     padding: 2rem;
     padding-bottom: 1.5rem;
     border-radius: 1.5rem;
-    margin: 0 auto;
     box-shadow: 5px 5px 15px var(--muted-foreground);
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/backgrounds/main.png");
     background-size: cover;
+    box-sizing: border-box;
 }
 
-main form{
+main form {
     display: flex;
     flex-direction: column;
 }
 
-main form label{
+main form label {
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.75rem;
-    color: rgb(27 44 72);
+    color: rgb(27, 44, 72);
     font-family: 'Poppins';
 }
 
-main form input{
-    padding: 0.350rem;
+main form input {
+    padding: 0.75rem;
     border-radius: 0.8rem;
-    border-color: #3B82F6;
-    font-size: 0.8rem;
+    border: 1px solid #3B82F6;
+    font-size: 1rem;
     line-height: 1.75rem;
     text-transform: uppercase;
     margin-top: 1vh;
+    box-sizing: border-box;
 }
 
-button{
+button {
     font-weight: 600;
     font-size: 1.125rem;
     font-family: 'Poppins';
-    padding: 0.5rem;
+    padding: 0.75rem;
     background-color: var(--foreground);
-    color:white;
+    color: white;
     border-radius: 12px;
     margin-top: 2vh;
+    border: none;
+    cursor: pointer;
 }
-
 
 /*-------------------------------------------
 Bas de carte
 -------------------------------------------*/
 
+main div:nth-child(2) {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
 
-main div:nth-child(2) p{
+main div:nth-child(2) p {
     font-size: 0.875rem;
-    text-align: center;
 }
 
-main div:nth-child(2) .welcomeCodeLosted{
+main div:nth-child(2) .welcomeCodeLosted {
     font-size: 0.775rem;
-    text-align: center;
-    font-family: 'Poppins',sans-serif;
-    margin-top: 3vh
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1rem;
 }
-main div:nth-child(2) .welcomeCodeLosted a{
+
+main div:nth-child(2) .welcomeCodeLosted a {
     color: var(--muted-foreground);
+    text-decoration: none;
 }
+
+/*-------------------------------------------
+Media Queries
+-------------------------------------------*/
 
 @media screen and (max-width: 768px) {
-    body{
+    body {
         width: 100vw;
+        height: 100vh;
     }
-  main div:nth-child(1) {
-    width: 90%;
-    height: 100vh;
-    padding: 1.5rem;
-    box-sizing: border-box;
-  }
 
-  header p {
-    max-width: 90%;
-    font-size: 1rem;
-  }
+    main div:nth-child(1) {
+        width: 90%;
+        height: auto;
+        padding: 1.5rem;
+    }
 
-  header h2 {
-    font-size: 5vw;
-  }
+    header p {
+        max-width: 90%;
+        font-size: 0.9rem;
+    }
 
-  .traversing-image {
-    width: 100%;
-    top: 85%;
-  }
+    header h2 {
+        font-size: 5vw;
+    }
 
-  main form input {
-    font-size: 1rem;
-    padding: 0.5rem;
-  }
+    .traversing-image {
+        width: 100%;
+        top: 85%;
+    }
 
-  button {
-    font-size: 1rem;
-    padding: 0.75rem;
-  }
+    main form input {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
 }
