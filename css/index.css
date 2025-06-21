@@ -121,7 +121,7 @@ main div:nth-child(2) .welcomeCodeLosted a{
     color: var(--muted-foreground);
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media (max-width: 1024px) {
 
     main div:nth-child(1) {
         width: 90vw;
