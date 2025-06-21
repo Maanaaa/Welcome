@@ -17,5 +17,4 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            cd /home/u605865287/welcomemmi.mana-dev.fr
             ./deploy.sh
