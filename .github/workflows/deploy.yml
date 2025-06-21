@@ -17,4 +17,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            ./deploy.sh
+            cd domains/welcomemmi.mana-dev.fr/public_html
+            git pull origin main
