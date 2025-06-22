@@ -139,6 +139,37 @@ main div:nth-child(2) .welcomeCodeLosted a{
     color: var(--muted-foreground);
 }
 
+/*-------------------------------------------
+Footer
+-------------------------------------------*/
+footer{
+    width: 10vw;
+    background-color: #20203d;
+    border-radius: 8px;
+    color: rgb(176, 173, 173);
+    position: absolute;
+    bottom: 10;
+    right: 10;
+    padding: 1vh;
+}
+
+footer p{
+    font-size: 0.6rem;
+    text-align: center;
+}
+
+footer p span{
+    color: white;
+    font-weight: bold;
+}
+
+footer p span img{
+    width: 2vh;
+    margin-top: 0.5vh;
+
+}
+
+
 
 
 @media only screen and (max-width: 768px) {

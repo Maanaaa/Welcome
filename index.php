@@ -35,7 +35,7 @@
             </main>
         </div>
         <footer>
-
+            <p>Développé par Théo Manya pour le <span> BDE MMI <img src="assets/ge/logo.png" alt=""></span></p>
         </footer>
     </body>
 </html>
