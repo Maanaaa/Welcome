@@ -13,7 +13,7 @@
         <div class="flex">
             <img src="assets/ge/peace.svg" class="traversing-image">
             <header>
-                <span class="large-icon">🎓</span>
+                <img src="assets/ge/interogation.svg" alt="" class="large-icon index">
                 <h1 class="welcome-text">Welcome !</h1>
                 <p>Découvre <span>ton parrain mystère</span> et commence ton aventure à l'IUT ! ✨</p>
                 <h2>🌟 🎉 🚀</h2>
@@ -21,6 +21,7 @@
             <main>
                 <div>
                     <form action="#">
+                        <img src="assets/ge/logo.png" alt="" class="logo-fixed">
                         <label for="welcomeCode">Entre ton code secret 🔐</label>
                         <input type="text" maxlength="8" placeholder="EFDHTGF4">
                         <button>Commencer l'aventure ! 🚀</button>
