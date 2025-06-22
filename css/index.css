@@ -212,4 +212,13 @@ footer p span img{
     .logo-fixed {
         width: 12vw;
     }
+    footer{
+        width: 30vw;
+    }
+    footer p{
+        font-size: 0.4rem;
+    }
+    footer p span img{
+        width: 1vh;
+    }
     }
