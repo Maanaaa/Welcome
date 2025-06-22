@@ -59,6 +59,10 @@ a{
     font-size: 6vw;
 }
 
+.flex{
+    display: flex;
+}
+
 @media only screen and (max-width: 768px) {
     .large-icon{
         font-size: 12vw;

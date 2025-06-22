@@ -126,7 +126,7 @@ main div:nth-child(2) .welcomeCodeLosted a{
 
 
 @media only screen and (max-width: 768px) {
-    body div:nth-child(1){
+    body .flex{
         display: flex;
         justify-content: center;
         align-items: center;
