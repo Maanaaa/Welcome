@@ -49,6 +49,8 @@ header p span{
     font-weight: bold;
 }
 
+
+
 /*-------------------------------------------
 Formulaire
 -------------------------------------------*/
@@ -120,6 +122,8 @@ main div:nth-child(2) .welcomeCodeLosted{
 main div:nth-child(2) .welcomeCodeLosted a{
     color: var(--muted-foreground);
 }
+
+
 
 @media only screen and (max-width: 768px) {
     body div:nth-child(1){

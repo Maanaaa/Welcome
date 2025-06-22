@@ -14,7 +14,7 @@
             <img src="assets/ge/peace.svg" class="traversing-image">
             <header>
                 <span class="large-icon">🎓</span>
-                <h1>Welcome !</h1>
+                <h1 class="welcome-text">Welcome !</h1>
                 <p>Découvre <span>ton parrain mystère</span> et commence ton aventure à l'IUT ! ✨</p>
                 <h2>🌟 🎉 🚀</h2>
             </header>
