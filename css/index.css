@@ -214,6 +214,7 @@ footer p span img{
     }
     footer{
         width: 30vw;
+        height: 3vh;
     }
     footer p{
         font-size: 0.4rem;
