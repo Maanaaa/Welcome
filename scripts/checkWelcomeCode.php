@@ -1,6 +1,5 @@
 <?php
-include($_SERVER['DOCUMENT_ROOT'] . '/config/configuration.php');
-include($_SERVER['DOCUMENT_ROOT'] . '/config/connection.php');
+include("../scripts/includes.php");
 
 $code = $_POST["welcomeCode"] ?? '';
 // Requête de vérification du code
@@ -27,7 +26,9 @@ if ($utilisateur) {
 
     session_start();
 
-    $_SESSION['code'] = $code; // Save en session
+    $_SESSION['welcomeCode'] = $code; // Save le welcomeCode en session
+    $_SESSION['role'] = $utilisateur['role'];
+    $_SESSION['id'] = $utilisateur['id'];
 
     // Form caché
     ?>
@@ -38,10 +39,10 @@ if ($utilisateur) {
         <title>Redirection...</title>
     </head>
     <body>
-        <form action="../chat/index.php" method="post" id="hiddenForm">
+        <form action="../chat" method="post" id="hiddenForm">
             <input type="hidden" name="code" value="<?= htmlspecialchars($code, ENT_QUOTES) ?>" />
         </form>
-
+        <!---- Soumettre le form avec le champ caché sans bouton --->
         <script>
           document.getElementById('hiddenForm').submit();
         </script>
