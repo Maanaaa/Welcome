@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 842.89 1192.43">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #384b70;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: 49px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fbfaef;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x=".5" y=".5" width="841.89" height="1191.43"/>
+    </clipPath>
+  </defs>
+  <g id="Background">
+    <g id="Levé_soleil" data-name="Levé soleil">
+      <g id="Bleu_foncé_fond_beige" data-name="Bleu foncé fond beige">
+        <g class="cls-4">
+          <rect class="cls-3" x=".5" y=".5" width="841.89" height="1190.55"/>
+          <g>
+            <line class="cls-2" x1="12.88" y1="1347.57" x2="-837.92" y2="163.14"/>
+            <line class="cls-2" x1="49.43" y1="1323.02" x2="-725.32" y2="87.5"/>
+            <line class="cls-2" x1="87.45" y1="1300.81" x2="-608.2" y2="19.09"/>
+            <line class="cls-2" x1="126.78" y1="1281.03" x2="-487.01" y2="-41.84"/>
+            <line class="cls-2" x1="167.28" y1="1263.77" x2="-362.23" y2="-95.04"/>
+            <line class="cls-2" x1="208.79" y1="1249.08" x2="-234.36" y2="-140.29"/>
+            <line class="cls-2" x1="251.13" y1="1237.02" x2="-103.9" y2="-177.43"/>
+            <line class="cls-2" x1="294.15" y1="1227.65" x2="28.63" y2="-206.31"/>
+            <line class="cls-2" x1="337.67" y1="1221" x2="162.71" y2="-226.8"/>
+            <line class="cls-2" x1="381.53" y1="1217.09" x2="297.82" y2="-238.84"/>
+            <line class="cls-2" x1="425.54" y1="1215.95" x2="433.42" y2="-242.37"/>
+            <line class="cls-2" x1="469.54" y1="1217.57" x2="568.97" y2="-237.37"/>
+            <line class="cls-2" x1="513.35" y1="1221.95" x2="703.94" y2="-223.88"/>
+            <line class="cls-2" x1="556.79" y1="1229.07" x2="837.79" y2="-201.94"/>
+            <line class="cls-2" x1="599.71" y1="1238.9" x2="970.01" y2="-171.63"/>
+            <line class="cls-2" x1="641.92" y1="1251.42" x2="1100.06" y2="-133.09"/>
+            <line class="cls-2" x1="683.26" y1="1266.55" x2="1227.43" y2="-86.45"/>
+            <line class="cls-2" x1="723.58" y1="1284.26" x2="1351.62" y2="-31.91"/>
+            <line class="cls-2" x1="762.7" y1="1304.46" x2="1472.15" y2="30.32"/>
+            <line class="cls-2" x1="800.47" y1="1327.07" x2="1588.52" y2="100"/>
+            <line class="cls-2" x1="836.75" y1="1352.02" x2="1700.3" y2="176.85"/>
+          </g>
+        </g>
+        <rect class="cls-1" x=".5" y=".5" width="841.89" height="1191.43"/>
+      </g>
+    </g>
+  </g>
+</svg>

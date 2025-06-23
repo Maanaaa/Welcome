@@ -3,7 +3,7 @@ include("../scripts/includes.php");
 
 session_start();
 
-if(!isset($_SESSION['welcomeCode'])){
+if (!isset($_SESSION['welcomeCode'])) {
     header("Location: ../index.php");
     exit();
 }
@@ -31,10 +31,10 @@ if ($filleul) {
         $filleulNom = $filleulInfo['nom'];
     }
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,47 +44,57 @@ if ($filleul) {
     <link href="https://fonts.googleapis.com/css2?family=Obviously&family=Chill+Script&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-    <div class="flex">
-        <div>
-            <header>
+    <div class="chat-app">
+        <header>
+            <div>
+                <img src="../assets/ge/etoile.svg">
                 <div>
-                    <img src="../assets/ge/enveloppe.svg" alt="Parrain Icon">
+                    <?php
+                    if (isset($_SESSION['role']) && $_SESSION['role'] == 'parrain' && $filleulPrenom) {
+                        echo '<h2>Tu es le parrain de ' . htmlspecialchars($filleulPrenom) . '</h2>';
+                    } else {
+                        echo '<h2>Ton Parrain Mystère</h2>';
+                    }
+                    ?>
                     <div>
-                        <?php
-                        if (isset($_SESSION['role']) && $_SESSION['role'] == 'parrain') {
-                            echo '<h2>Tu es le parrain de '. htmlspecialchars($filleulPrenom) . ' ' . htmlspecialchars($filleulNom). '</h2>';
-                        } else {
-                            echo '<h2>Ton Parrain Mystère</h2>';
-                        }
-                        ?>
-                        <p>En ligne</p>
+                        <span></span>
+                        En ligne
                     </div>
                 </div>
-            </header>
-            <main>
-                <div id="chat-messages">
-                    <div>
-                        <p>Dis bonjour à ton parrain mystère !</p>
-                    </div>
-                    <div>
-                        <p>Salut ! Bienvenue...</p>
-                        <span>Il y a 2 jours</span>
-                    </div>
-                    <div>
-                        <p>Je suis ton parrain... je suis là pour t'aider !</p>
-                        <span>Il y a 2 jours</span>
-                    </div>
-                </div>
-                
-                <div id="chat-input">
-                    <form>
-                        <input type="text" placeholder="Ecrire quelque chose..">
-                        <button type="submit"><img src="../assets/ge/enveloppe.svg"></button>
-                    </form>
-                </div>
-            </main>
-        </div>
+            </div>
+            <div><img src="../assets/ge/logo.png"></div>
+        </header>
+
+        <main>
+            <div>
+                🎊 Ton aventure commence ! Dis bonjour à ton parrain mystère ! 🎊
+            </div>
+
+            <section>
+                <p>Salut ! Bienvenue dans ton aventure la,zdzdoerj ! 🎓</p>
+                <time>il y a 2 jours</time>
+            </section>
+
+            <section>
+                <p>Je suis ton parrain et je suis là pour t'aider ! ✨</p>
+                <time>il y a 2 jours</time>
+            </section>
+        </main>
+
+        <footer>
+            <div>
+                <button>😊</button>
+                <button>📷</button>
+                <input type="text" placeholder="Écris ton message..." />
+                <button>📨</button>
+            </div>
+            
+        </footer>
     </div>
+    <img src="../assets/ge/logo-bdemmilepuy.png" alt="" style="position: absolute;bottom:2vh;right:2vh;width:5vw;"><p style="font-size: 0.6rem;text-align:center;" class="author">Développé par Théo Manya pour le <span> BDE MMI</p>
+                
 </body>
+
 </html>
