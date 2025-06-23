@@ -11,6 +11,8 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 h2 {
@@ -158,7 +160,8 @@ footer button {
 @media only screen and (max-width: 768px) {
 .chat-app{
     width: 100vw;
-    height: 95vh;
+    height: 80vh;
+
 }
 
 }
