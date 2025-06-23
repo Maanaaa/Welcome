@@ -137,7 +137,9 @@ footer button {
     font-size: 1.2rem;
     cursor: pointer;
 }
-
+.logobde-mmi{
+    position: absolute;bottom:2vh;right:2vh;width:5vw;
+}
 .chat-app {
     border: 3px solid var(--primary);
     width: 25vw;
@@ -163,5 +165,11 @@ footer button {
     height: 80vh;
 
 }
+
+.logobde-mmi{
+    width:8vw;
+}
+
+
 
 }

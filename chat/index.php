@@ -93,7 +93,7 @@ if ($filleul) {
             
         </footer>
     </div>
-    <img src="../assets/ge/logo-bdemmilepuy.png" alt="" style="position: absolute;bottom:2vh;right:2vh;width:5vw;"><p style="font-size: 0.6rem;text-align:center;" class="author">Développé par Théo Manya pour le <span> BDE MMI</p>
+    <img src="../assets/ge/logo-bdemmilepuy.png" alt="" class="logobde-mmi"><p style="font-size: 0.6rem;text-align:center;" class="author">Développé par Théo Manya pour le <span> BDE MMI</p>
                 
 </body>
 
