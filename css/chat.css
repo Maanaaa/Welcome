@@ -157,7 +157,8 @@ footer button {
 
 @media only screen and (max-width: 768px) {
 .chat-app{
-    width: 90vw;
-    height: 90vh;
+    width: 100vw;
+    height: 95vh;
 }
+
 }
