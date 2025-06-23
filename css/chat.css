@@ -13,6 +13,13 @@ body {
     flex-direction: column;
     overflow-y: hidden;
     overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+html{
+    margin:0;
+    padding:0;
 }
 
 h2 {
@@ -163,11 +170,19 @@ footer button {
 .chat-app{
     width: 95vw;
     height: 80vh;
-
+    top: 0;
 }
 
 .logobde-mmi{
     width:8vw;
+}
+
+.chat-app p{
+    font-size: 0.8rem;
+}
+
+.chat-app time{
+    font-size: 0.6rem;
 }
 
 
