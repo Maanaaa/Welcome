@@ -20,10 +20,10 @@
             </header>
             <main>
                 <div>
-                    <form action="#">
+                    <form action="scripts/checkWelcomeCode.php" method="POST">
                         <img src="assets/ge/logo.png" alt="" class="logo-fixed">
                         <label for="welcomeCode">Entre ton code secret 🔐</label>
-                        <input type="text" maxlength="8" placeholder="EFDHTGF4">
+                        <input type="text" maxlength="" placeholder="EFDHTGF4" name="welcomeCode">
                         <button>Commencer l'aventure ! 🚀</button>
                     </form>
                     <div>
