@@ -1,7 +1,6 @@
 <?php
 include("../scripts/includes.php");
-
-session_start();
+include("../scripts/session.php");
 
 if (!isset($_SESSION['welcomeCode'])) {
     header("Location: ../index.php");
@@ -11,7 +10,6 @@ if (!isset($_SESSION['welcomeCode'])) {
 $filleulPrenom = null;
 $filleulNom = null;
 
-// Requête pour récup l'ID du filleul
 $requete = 'SELECT filleul_id FROM relations WHERE parrain_id = :parrainId';
 $stmt = $connection->prepare($requete);
 $stmt->bindParam(':parrainId', $_SESSION['id'], PDO::PARAM_INT);
@@ -19,7 +17,6 @@ $stmt->execute();
 $filleul = $stmt->fetch(PDO::FETCH_ASSOC);
 
 if ($filleul) {
-    // Requête pour récupérer le prénom du filleul
     $requete = 'SELECT prenom,nom FROM utilisateurs WHERE id = :filleulId';
     $stmt = $connection->prepare($requete);
     $stmt->bindParam(':filleulId', $filleul['filleul_id'], PDO::PARAM_INT);
@@ -34,7 +31,6 @@ if ($filleul) {
 ?>
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,7 +40,6 @@ if ($filleul) {
     <link href="https://fonts.googleapis.com/css2?family=Obviously&family=Chill+Script&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
-
 <body>
     <div class="chat-app">
         <header>
@@ -90,11 +85,8 @@ if ($filleul) {
                 <input type="text" placeholder="Écris ton message..." />
                 <button>📨</button>
             </div>
-            
         </footer>
     </div>
     <img src="../assets/ge/logo-bdemmilepuy.png" alt="" class="logobde-mmi"><p style="font-size: 0.6rem;text-align:center;" class="author">Développé par Théo Manya pour le <span> BDE MMI</p>
-                
 </body>
-
 </html>

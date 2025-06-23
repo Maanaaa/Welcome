@@ -1,8 +1,9 @@
 <?php
 include("../scripts/includes.php");
+include("../scripts/session.php");
 
 $code = $_POST["welcomeCode"] ?? '';
-// Requête de vérification du code
+
 $requete = 'SELECT id, role, prenom, nom FROM utilisateurs WHERE code = :welcomeCode';
 $resultats = $connection->prepare($requete);
 $resultats->bindParam(':welcomeCode', $code, PDO::PARAM_STR);
@@ -12,25 +13,22 @@ $utilisateur = $resultats->fetch(PDO::FETCH_ASSOC);
 $resultats->closeCursor();
 
 if ($utilisateur) {
-    // Création du cookie
-    // Durée du cookie : 30 jours (en s)
     $cookieLifetime = 30 * 24 * 60 * 60;
 
     session_set_cookie_params([
         'lifetime' => $cookieLifetime,
         'path' => '/',
-        'secure' => true,   
-        'httponly' => true, 
-        'samesite' => 'Lax' 
+        'secure' => false,
+        'httponly' => true,
+        'samesite' => 'Lax'
     ]);
 
-    session_start();
+    // session_start() est déjà appelé dans session.php
 
-    $_SESSION['welcomeCode'] = $code; // Save le welcomeCode en session
+    $_SESSION['welcomeCode'] = $code;
     $_SESSION['role'] = $utilisateur['role'];
     $_SESSION['id'] = $utilisateur['id'];
 
-    // Form caché
     ?>
     <!DOCTYPE html>
     <html lang="fr">
@@ -39,10 +37,9 @@ if ($utilisateur) {
         <title>Redirection...</title>
     </head>
     <body>
-        <form action="../chat" method="post" id="hiddenForm">
+        <form action="../chat/index.php" method="post" id="hiddenForm">
             <input type="hidden" name="code" value="<?= htmlspecialchars($code, ENT_QUOTES) ?>" />
         </form>
-        <!---- Soumettre le form avec le champ caché sans bouton --->
         <script>
           document.getElementById('hiddenForm').submit();
         </script>
