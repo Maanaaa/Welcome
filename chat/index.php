@@ -65,21 +65,22 @@ if ($filleul) {
             <main>
                 <div id="chat-messages">
                     <div>
-                        <p>Ton aventure commence ! Dis bonjour à ton parrain mystère !</p>
+                        <p>Dis bonjour à ton parrain mystère !</p>
                     </div>
                     <div>
-                        <p>Salut ! Bienvenue dans ton aventure universitaire !</p>
+                        <p>Salut ! Bienvenue...</p>
                         <span>Il y a 2 jours</span>
                     </div>
                     <div>
-                        <p>Je suis ton parrain mystère et je suis là pour t'aider !</p>
+                        <p>Je suis ton parrain... je suis là pour t'aider !</p>
                         <span>Il y a 2 jours</span>
                     </div>
                 </div>
+                
                 <div id="chat-input">
                     <form>
-                        <input type="text" placeholder="Écrire un message...">
-                        <button type="submit"><img src="assets/ge/send-icon.svg" alt="Send"></button>
+                        <input type="text" placeholder="Ecrire quelque chose..">
+                        <button type="submit"><img src="../assets/ge/enveloppe.svg"></button>
                     </form>
                 </div>
             </main>
