@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `welcomemmi`
+-- Base de données : `mydb`
 --
 
 -- --------------------------------------------------------
@@ -60,19 +60,6 @@ CREATE TABLE `utilisateurs` (
   `code` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `role` enum('parrain','filleul') COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'filleul'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Déchargement des données de la table `utilisateurs`
---
-
-INSERT INTO `utilisateurs` (`id`, `prenom`, `nom`, `code`, `role`) VALUES
-(1, 'Alice', 'Dupont', 'CODEALICE123', 'parrain'),
-(2, 'Bob', 'Martin', 'CODEBOB456', 'filleul');
-
---
--- Index pour les tables déchargées
---
-
 --
 -- Index pour la table `messages`
 --
