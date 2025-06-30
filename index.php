@@ -5,6 +5,7 @@ if (isset($_SESSION['welcomeCode'])) {
     header("Location: chat/");
     exit();
 }
+
 ?>
 <html>
     <head>

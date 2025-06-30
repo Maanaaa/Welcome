@@ -31,15 +31,20 @@ if ($filleul) {
 ?>
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ton Parrain Mystère</title>
     <link rel="stylesheet" href="../css/chat.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Obviously&family=Chill+Script&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Obviously&family=Chill+Script&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
 </head>
+
 <body>
     <div class="chat-app">
         <header>
@@ -82,11 +87,21 @@ if ($filleul) {
             <div>
                 <button>😊</button>
                 <button>📷</button>
-                <input type="text" placeholder="Écris ton message..." />
-                <button>📨</button>
+                <form id="form">
+                    <input type="text" id="message" name="contenu" placeholder="Tape ton message" autocomplete="off" required />
+                    <button type="submit">Envoyer</button>
+                </form>
             </div>
         </footer>
     </div>
-    <img src="../assets/ge/logo-bdemmilepuy.png" alt="" class="logobde-mmi"><p style="font-size: 0.6rem;text-align:center;" class="author">Développé par Théo Manya pour le <span> BDE MMI</p>
+    <img src="../assets/ge/logo-bdemmilepuy.png" alt="" class="logobde-mmi">
+    <p style="font-size: 0.6rem;text-align:center;" class="author">Développé par Théo Manya pour le <span> BDE MMI</p>
+    <script>
+    const currentUserId = <?php echo json_encode($_SESSION['id']); ?>;
+    const currentUserRole = <?php echo json_encode($_SESSION['role']); ?>;
+    </script>
+    <script src="../js/chat.js"></script>
+
 </body>
+
 </html>
